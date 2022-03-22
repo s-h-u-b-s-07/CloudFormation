@@ -24,8 +24,8 @@
 				       "Revision" : { 
                 			"RevisionType" : "GitHub", 
                 			"GitHubLocation" : { 
-                    		"CommitId" : {"Ref" : "CommitId"}, 
-                    		"Repository" : {"Ref" : "Repository"} 
+                    		"CommitId" : {"Ref" : "cf7c7e99bbf037e4f2cd6965de8bf80af15c48d4"}, 
+                    		"Repository" : {"Ref" : "codedeploy-to-ec2-nodejs"} 
                 			}
 				}
         		}
