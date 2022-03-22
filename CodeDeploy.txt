@@ -11,3 +11,28 @@
       }
 }
 
+--------------------------------------------------------------------
+
+{
+    	"AWSTemplateFormatVersion":"2010-09-09",
+    	"Description":"creating codedeploy delployment Group sample",
+	    "Resources": {
+             "DeploymentGroup": {
+                "Type": "AWS::CodeDeploy::DeploymentGroup",
+                 "Properties": {
+			        "ApplicationName" : {"Ref" : "application"},
+				       "Revision" : { 
+                			"RevisionType" : "GitHub", 
+                			"GitHubLocation" : { 
+                    		"CommitId" : {"Ref" : "CommitId"}, 
+                    		"Repository" : {"Ref" : "Repository"} 
+                			}
+				}
+        		}
+    		}
+    	}
+}
+
+
+-----------------------------------------------------------------
+
