@@ -5,11 +5,9 @@
         "application": {
             "Type": "AWS::CodeDeploy::Application",
             "Properties": {
-			"MinimumHealthyHosts" : {
-            		"Type" : "FLEET_PERCENT",
-            		"Value" : "75"
-        		}
+			"ComputePlatform": "EC2/On-premises"
 		}
          }
       }
 }
+
