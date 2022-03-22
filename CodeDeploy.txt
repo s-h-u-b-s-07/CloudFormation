@@ -1,0 +1,15 @@
+{
+    	"AWSTemplateFormatVersion":"2010-09-09",
+    	"Description":"creating codedeploy sample",
+	"Resources": {
+        "application": {
+            "Type": "AWS::CodeDeploy::Application",
+            "Properties": {
+			"MinimumHealthyHosts" : {
+            		"Type" : "FLEET_PERCENT",
+            		"Value" : "75"
+        		}
+		}
+         }
+      }
+}
